@@ -380,6 +380,44 @@ hi! link helpBacktick Special
 
 " Languages: {{{
 
+" AsciiDoc: {{{
+"FIXME: Better way to fix AsciiDoc without to redefine globals
+hi! link Title                            DraculaPurpleBold
+hi! link Constant                         DraculaGreen
+hi! link Identifier                       DraculaGreen
+
+hi! link asciidocQuotedBold                     DraculaOrangeBold
+hi! link asciidocQuotedUnconstrainedBold        DraculaOrangeBold
+"FIXME: _italic_ is not regular italic text and __italic__ is Link
+hi! link asciidocQuotedEmphasizedItalic         DraculaYellowItalic
+hi! link asciidocQuotedUnconstrainedEmphasized  DraculaYellowItalic
+
+hi! link asciidocListBullet               DraculaCyan
+hi! link asciidocListNumber               DraculaCyan
+hi! link asciidocListLabel                DraculaCyan
+
+hi! link asciidocRuler                    DraculaComment
+
+"TODO: Untested
+"hi! link asciidocAttributeRef       Special
+"hi! link asciidocEntityRef          Special
+"hi! link asciidocIdMarker           Special
+
+"FIXME: Link vs Reference
+"hi! link asciidocMacroAttributes    Label
+"hi! link asciidocAttributeMacro     Macro
+"hi! link asciidocIndexTerm          Macro
+"hi! link asciidocAnchorMacro        Macro
+"hi! link asciidocMacro              Macro
+"hi! link asciidocRefMacro           DraculaLink
+"hi! link asciidocURL                DraculaLink
+
+"FIXME: asciidocEmail is linked to Macro
+"Markdown considers email as regular text.
+"RST considers email as regular text too but mailto:user@example.com as Link.
+"hi! link asciidocEmail              DraculaLink
+" }}}
+
 " CSS: {{{
 hi! link cssAttrComma         Delimiter
 hi! link cssAttrRegion        DraculaPink
