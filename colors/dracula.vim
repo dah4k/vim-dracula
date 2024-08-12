@@ -381,10 +381,13 @@ hi! link helpBacktick Special
 " Languages: {{{
 
 " AsciiDoc: {{{
+hi! link asciidocBlockTitle         DraculaPurple
+hi! link asciidocOneLineTitle       DraculaPurpleBold
+hi! link asciidocTwoLineTitle       DraculaPurpleBold
+
 "FIXME: Better way to fix AsciiDoc without to redefine globals
-hi! link Title                            DraculaPurpleBold
-hi! link Constant                         DraculaGreen
-hi! link Identifier                       DraculaGreen
+"hi! link Constant    DraculaGreen
+"hi! link Identifier  DraculaGreen
 
 hi! link asciidocQuotedBold                     DraculaOrangeBold
 hi! link asciidocQuotedUnconstrainedBold        DraculaOrangeBold
