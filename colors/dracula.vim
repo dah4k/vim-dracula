@@ -387,12 +387,18 @@ hi! link asciidocTwoLineTitle       DraculaPurpleBold
 
 "FIXME: Better way to fix AsciiDoc without to redefine globals
 "hi! link Constant    DraculaGreen
-"hi! link Identifier  DraculaGreen
+
+hi! link asciidocLiteralParagraph               DraculaGreen
+hi! link asciidocQuotedMonospaced               DraculaGreen
+hi! link asciidocQuotedMonospaced2              DraculaGreen
+hi! link asciidocQuotedUnconstrainedMonospaced  DraculaGreen
 
 hi! link asciidocQuotedBold                     DraculaOrangeBold
 hi! link asciidocQuotedUnconstrainedBold        DraculaOrangeBold
-"FIXME: _italic_ is not regular italic text and __italic__ is Link
-hi! link asciidocQuotedEmphasizedItalic         DraculaYellowItalic
+
+"WONTFIX: Unused asciidocQuotedEmphasizedItalic
+hi! link asciidocQuotedEmphasized               DraculaYellowItalic
+hi! link asciidocQuotedEmphasized2              DraculaYellowItalic
 hi! link asciidocQuotedUnconstrainedEmphasized  DraculaYellowItalic
 
 hi! link asciidocListBullet               DraculaCyan
